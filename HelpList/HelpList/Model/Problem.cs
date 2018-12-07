@@ -16,7 +16,7 @@ namespace HelpList.Model
         private string _location;
         private string _description;
         private DateTime _date;
-        private int _number;
+        //private int _number;
         #endregion
 
         #region Constructor

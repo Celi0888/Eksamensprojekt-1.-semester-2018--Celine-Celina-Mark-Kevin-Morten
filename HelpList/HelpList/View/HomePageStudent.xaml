@@ -17,19 +17,23 @@
             <AppBarButton
                 Foreground="White"
                 Icon="Home"
-                Label="Home" />
+                Label="Home" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.HomePageStudent"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
             <AppBarButton
                 Foreground="White"
                 Icon="List"
-                Label="HelpList" />
-            <AppBarButton
-                Foreground="White"
-                Icon="Contact"
-                Label="Classes" />
-            <AppBarButton
-                Foreground="White"
-                Icon="Message"
-                Label="comment" />
+                Label="HelpList" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.HelpListStudent" />
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
             <AppBarButton
                 Foreground="White"
                 Icon="Undo"

@@ -27614,11 +27614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cecce\\Downloads\\HelpList\\HelpList\\HelpList.csproj",
+      "projectUniqueName": "C:\\Users\\cecce\\source\\repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\HelpList.csproj",
       "projectName": "HelpList",
-      "projectPath": "C:\\Users\\cecce\\Downloads\\HelpList\\HelpList\\HelpList.csproj",
+      "projectPath": "C:\\Users\\cecce\\source\\repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\HelpList.csproj",
       "packagesPath": "C:\\Users\\cecce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cecce\\Downloads\\HelpList\\HelpList\\obj\\",
+      "outputPath": "C:\\Users\\cecce\\source\\repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

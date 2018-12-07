@@ -7,7 +7,6 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using FV3.Helpers;
-using HelpList.Annotations;
 using HelpList.Model;
 using HelpList.ViewModel;
 
@@ -18,8 +17,7 @@ namespace HelpList.ViewModel
     {
         #region PropertyChangeSupport
         public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
+		
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

@@ -10,10 +10,6 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.DataContext>
-        <ViewModel:ProblemCollector/>
-    </Page.DataContext>
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="70"/>
@@ -35,19 +31,33 @@
             <AppBarButton
                 Foreground="White"
                 Icon="Home"
-                Label="Home" />
+                Label="Home" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.HomePageStudent"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
             <AppBarButton
                 Foreground="White"
                 Icon="List"
-                Label="HelpList" />
+                Label="HelpList" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.HelpListStudent"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
             <AppBarButton
                 Foreground="White"
-                Icon="Contact"
-                Label="Classes" />
-            <AppBarButton
-                Foreground="White"
-                Icon="Message"
-                Label="comment" />
+                Icon="Undo"
+                Label="Log Ud" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.MainPage"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
         </StackPanel>
 
         <TextBlock

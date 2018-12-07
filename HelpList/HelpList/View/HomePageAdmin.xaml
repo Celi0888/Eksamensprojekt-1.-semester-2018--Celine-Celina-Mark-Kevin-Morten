@@ -23,11 +23,13 @@
             <AppBarButton
                 Foreground="White"
                 Icon="Home"
-                Label="Home" />
-            <AppBarButton
-                Foreground="White"
-                Icon="List"
-                Label="List" />
+                Label="Home" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.HomePageAdmin"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
             <AppBarButton
                 Foreground="White"
                 Icon="Add"
@@ -41,7 +43,7 @@
             <AppBarButton
                 Foreground="White"
                 Icon="Message"
-                Label="comment" />
+                Label="Beskeder" />
             <AppBarButton
                 Foreground="White"
                 Icon="Undo"
@@ -55,7 +57,9 @@
 
 
         </StackPanel>
-        <Image Height="200" Source="/Assets/logoHL-5.PNG" Margin="0,0,0,440" />
+        <Image Height="200" Source="/Assets/logoHL-5.PNG" Margin="117,0,157,440" >
+            
+        </Image>
         <TextBlock 
             HorizontalAlignment="Left" 
             FontSize="20" 

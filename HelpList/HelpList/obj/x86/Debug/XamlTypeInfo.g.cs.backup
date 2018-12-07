@@ -132,7 +132,7 @@ namespace HelpList.HelpList_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[36];
+            _typeNameTable = new string[38];
             _typeNameTable[0] = "HelpList.View.PivotCreateStudent";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -150,27 +150,29 @@ namespace HelpList.HelpList_XamlTypeInfo
             _typeNameTable[14] = "String";
             _typeNameTable[15] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
             _typeNameTable[16] = "HelpList.View.CreatePageAdmin";
-            _typeNameTable[17] = "HelpList.Model.ClassCollection";
-            _typeNameTable[18] = "HelpList.Model.ClassObject";
-            _typeNameTable[19] = "FV3.Helpers.RelayCommand";
-            _typeNameTable[20] = "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.ClassObject>";
-            _typeNameTable[21] = "System.Collections.ObjectModel.Collection`1<HelpList.Model.ClassObject>";
-            _typeNameTable[22] = "HelpList.View.HomePageAdmin";
-            _typeNameTable[23] = "HelpList.View.HomePageStudent";
-            _typeNameTable[24] = "HelpList.View.HomePageTeacher";
-            _typeNameTable[25] = "HelpList.MainPage";
-            _typeNameTable[26] = "HelpList.Model.StudentCollection";
-            _typeNameTable[27] = "HelpList.Model.Student";
-            _typeNameTable[28] = "HelpList.Model.User";
-            _typeNameTable[29] = "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Student>";
-            _typeNameTable[30] = "System.Collections.ObjectModel.Collection`1<HelpList.Model.Student>";
-            _typeNameTable[31] = "Int32";
-            _typeNameTable[32] = "HelpList.Model.TeacherCollection";
-            _typeNameTable[33] = "HelpList.Model.Teacher";
-            _typeNameTable[34] = "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Teacher>";
-            _typeNameTable[35] = "System.Collections.ObjectModel.Collection`1<HelpList.Model.Teacher>";
+            _typeNameTable[17] = "HelpList.View.HelpListStudent";
+            _typeNameTable[18] = "HelpList.View.HelpListTeacher";
+            _typeNameTable[19] = "HelpList.Model.ClassCollection";
+            _typeNameTable[20] = "HelpList.Model.ClassObject";
+            _typeNameTable[21] = "FV3.Helpers.RelayCommand";
+            _typeNameTable[22] = "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.ClassObject>";
+            _typeNameTable[23] = "System.Collections.ObjectModel.Collection`1<HelpList.Model.ClassObject>";
+            _typeNameTable[24] = "HelpList.View.HomePageAdmin";
+            _typeNameTable[25] = "HelpList.View.HomePageStudent";
+            _typeNameTable[26] = "HelpList.View.HomePageTeacher";
+            _typeNameTable[27] = "HelpList.MainPage";
+            _typeNameTable[28] = "HelpList.Model.StudentCollection";
+            _typeNameTable[29] = "HelpList.Model.Student";
+            _typeNameTable[30] = "HelpList.Model.User";
+            _typeNameTable[31] = "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Student>";
+            _typeNameTable[32] = "System.Collections.ObjectModel.Collection`1<HelpList.Model.Student>";
+            _typeNameTable[33] = "Int32";
+            _typeNameTable[34] = "HelpList.Model.TeacherCollection";
+            _typeNameTable[35] = "HelpList.Model.Teacher";
+            _typeNameTable[36] = "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Teacher>";
+            _typeNameTable[37] = "System.Collections.ObjectModel.Collection`1<HelpList.Model.Teacher>";
 
-            _typeTable = new global::System.Type[36];
+            _typeTable = new global::System.Type[38];
             _typeTable[0] = typeof(global::HelpList.View.PivotCreateStudent);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -188,25 +190,27 @@ namespace HelpList.HelpList_XamlTypeInfo
             _typeTable[14] = typeof(global::System.String);
             _typeTable[15] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
             _typeTable[16] = typeof(global::HelpList.View.CreatePageAdmin);
-            _typeTable[17] = typeof(global::HelpList.Model.ClassCollection);
-            _typeTable[18] = typeof(global::HelpList.Model.ClassObject);
-            _typeTable[19] = typeof(global::FV3.Helpers.RelayCommand);
-            _typeTable[20] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.ClassObject>);
-            _typeTable[21] = typeof(global::System.Collections.ObjectModel.Collection<global::HelpList.Model.ClassObject>);
-            _typeTable[22] = typeof(global::HelpList.View.HomePageAdmin);
-            _typeTable[23] = typeof(global::HelpList.View.HomePageStudent);
-            _typeTable[24] = typeof(global::HelpList.View.HomePageTeacher);
-            _typeTable[25] = typeof(global::HelpList.MainPage);
-            _typeTable[26] = typeof(global::HelpList.Model.StudentCollection);
-            _typeTable[27] = typeof(global::HelpList.Model.Student);
-            _typeTable[28] = typeof(global::HelpList.Model.User);
-            _typeTable[29] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>);
-            _typeTable[30] = typeof(global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Student>);
-            _typeTable[31] = typeof(global::System.Int32);
-            _typeTable[32] = typeof(global::HelpList.Model.TeacherCollection);
-            _typeTable[33] = typeof(global::HelpList.Model.Teacher);
-            _typeTable[34] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Teacher>);
-            _typeTable[35] = typeof(global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Teacher>);
+            _typeTable[17] = typeof(global::HelpList.View.HelpListStudent);
+            _typeTable[18] = typeof(global::HelpList.View.HelpListTeacher);
+            _typeTable[19] = typeof(global::HelpList.Model.ClassCollection);
+            _typeTable[20] = typeof(global::HelpList.Model.ClassObject);
+            _typeTable[21] = typeof(global::FV3.Helpers.RelayCommand);
+            _typeTable[22] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.ClassObject>);
+            _typeTable[23] = typeof(global::System.Collections.ObjectModel.Collection<global::HelpList.Model.ClassObject>);
+            _typeTable[24] = typeof(global::HelpList.View.HomePageAdmin);
+            _typeTable[25] = typeof(global::HelpList.View.HomePageStudent);
+            _typeTable[26] = typeof(global::HelpList.View.HomePageTeacher);
+            _typeTable[27] = typeof(global::HelpList.MainPage);
+            _typeTable[28] = typeof(global::HelpList.Model.StudentCollection);
+            _typeTable[29] = typeof(global::HelpList.Model.Student);
+            _typeTable[30] = typeof(global::HelpList.Model.User);
+            _typeTable[31] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>);
+            _typeTable[32] = typeof(global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Student>);
+            _typeTable[33] = typeof(global::System.Int32);
+            _typeTable[34] = typeof(global::HelpList.Model.TeacherCollection);
+            _typeTable[35] = typeof(global::HelpList.Model.Teacher);
+            _typeTable[36] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Teacher>);
+            _typeTable[37] = typeof(global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Teacher>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -249,23 +253,25 @@ namespace HelpList.HelpList_XamlTypeInfo
         private object Activate_13_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
         private object Activate_15_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
         private object Activate_16_CreatePageAdmin() { return new global::HelpList.View.CreatePageAdmin(); }
-        private object Activate_17_ClassCollection() { return new global::HelpList.Model.ClassCollection(); }
-        private object Activate_18_ClassObject() { return new global::HelpList.Model.ClassObject(); }
-        private object Activate_20_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.ClassObject>(); }
-        private object Activate_21_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.ClassObject>(); }
-        private object Activate_22_HomePageAdmin() { return new global::HelpList.View.HomePageAdmin(); }
-        private object Activate_23_HomePageStudent() { return new global::HelpList.View.HomePageStudent(); }
-        private object Activate_24_HomePageTeacher() { return new global::HelpList.View.HomePageTeacher(); }
-        private object Activate_25_MainPage() { return new global::HelpList.MainPage(); }
-        private object Activate_26_StudentCollection() { return new global::HelpList.Model.StudentCollection(); }
-        private object Activate_27_Student() { return new global::HelpList.Model.Student(); }
-        private object Activate_28_User() { return new global::HelpList.Model.User(); }
-        private object Activate_29_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>(); }
-        private object Activate_30_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Student>(); }
-        private object Activate_32_TeacherCollection() { return new global::HelpList.Model.TeacherCollection(); }
-        private object Activate_33_Teacher() { return new global::HelpList.Model.Teacher(); }
-        private object Activate_34_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Teacher>(); }
-        private object Activate_35_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Teacher>(); }
+        private object Activate_17_HelpListStudent() { return new global::HelpList.View.HelpListStudent(); }
+        private object Activate_18_HelpListTeacher() { return new global::HelpList.View.HelpListTeacher(); }
+        private object Activate_19_ClassCollection() { return new global::HelpList.Model.ClassCollection(); }
+        private object Activate_20_ClassObject() { return new global::HelpList.Model.ClassObject(); }
+        private object Activate_22_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.ClassObject>(); }
+        private object Activate_23_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.ClassObject>(); }
+        private object Activate_24_HomePageAdmin() { return new global::HelpList.View.HomePageAdmin(); }
+        private object Activate_25_HomePageStudent() { return new global::HelpList.View.HomePageStudent(); }
+        private object Activate_26_HomePageTeacher() { return new global::HelpList.View.HomePageTeacher(); }
+        private object Activate_27_MainPage() { return new global::HelpList.MainPage(); }
+        private object Activate_28_StudentCollection() { return new global::HelpList.Model.StudentCollection(); }
+        private object Activate_29_Student() { return new global::HelpList.Model.Student(); }
+        private object Activate_30_User() { return new global::HelpList.Model.User(); }
+        private object Activate_31_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>(); }
+        private object Activate_32_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Student>(); }
+        private object Activate_34_TeacherCollection() { return new global::HelpList.Model.TeacherCollection(); }
+        private object Activate_35_Teacher() { return new global::HelpList.Model.Teacher(); }
+        private object Activate_36_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Teacher>(); }
+        private object Activate_37_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Teacher>(); }
         private void VectorAdd_7_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
@@ -278,37 +284,37 @@ namespace HelpList.HelpList_XamlTypeInfo
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_20_ObservableCollection(object instance, object item)
+        private void VectorAdd_22_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HelpList.Model.ClassObject>)instance;
             var newItem = (global::HelpList.Model.ClassObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_21_Collection(object instance, object item)
+        private void VectorAdd_23_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HelpList.Model.ClassObject>)instance;
             var newItem = (global::HelpList.Model.ClassObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_29_ObservableCollection(object instance, object item)
+        private void VectorAdd_31_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HelpList.Model.Student>)instance;
             var newItem = (global::HelpList.Model.Student)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_30_Collection(object instance, object item)
+        private void VectorAdd_32_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HelpList.Model.Student>)instance;
             var newItem = (global::HelpList.Model.Student)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_34_ObservableCollection(object instance, object item)
+        private void VectorAdd_36_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HelpList.Model.Teacher>)instance;
             var newItem = (global::HelpList.Model.Teacher)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_35_Collection(object instance, object item)
+        private void VectorAdd_37_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HelpList.Model.Teacher>)instance;
             var newItem = (global::HelpList.Model.Teacher)item;
@@ -427,9 +433,23 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  HelpList.Model.ClassCollection
+            case 17:   //  HelpList.View.HelpListStudent
+                userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_HelpListStudent;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  HelpList.View.HelpListTeacher
+                userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_HelpListTeacher;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  HelpList.Model.ClassCollection
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_17_ClassCollection;
+                userType.Activator = Activate_19_ClassCollection;
                 userType.AddMemberName("ClassName");
                 userType.AddMemberName("ClassRoom");
                 userType.AddMemberName("SelectedClass");
@@ -441,67 +461,67 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 18:   //  HelpList.Model.ClassObject
+            case 20:   //  HelpList.Model.ClassObject
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_18_ClassObject;
+                userType.Activator = Activate_20_ClassObject;
                 userType.AddMemberName("ClassName");
                 userType.AddMemberName("ClassRoom");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  FV3.Helpers.RelayCommand
+            case 21:   //  FV3.Helpers.RelayCommand
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.ClassObject>
+            case 22:   //  System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.ClassObject>
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HelpList.Model.ClassObject>"));
-                userType.CollectionAdd = VectorAdd_20_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_22_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 21:   //  System.Collections.ObjectModel.Collection`1<HelpList.Model.ClassObject>
+            case 23:   //  System.Collections.ObjectModel.Collection`1<HelpList.Model.ClassObject>
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_21_Collection;
-                userType.CollectionAdd = VectorAdd_21_Collection;
+                userType.Activator = Activate_23_Collection;
+                userType.CollectionAdd = VectorAdd_23_Collection;
                 xamlType = userType;
                 break;
 
-            case 22:   //  HelpList.View.HomePageAdmin
+            case 24:   //  HelpList.View.HomePageAdmin
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_HomePageAdmin;
+                userType.Activator = Activate_24_HomePageAdmin;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  HelpList.View.HomePageStudent
+            case 25:   //  HelpList.View.HomePageStudent
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_23_HomePageStudent;
+                userType.Activator = Activate_25_HomePageStudent;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  HelpList.View.HomePageTeacher
+            case 26:   //  HelpList.View.HomePageTeacher
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_HomePageTeacher;
+                userType.Activator = Activate_26_HomePageTeacher;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  HelpList.MainPage
+            case 27:   //  HelpList.MainPage
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_25_MainPage;
+                userType.Activator = Activate_27_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  HelpList.Model.StudentCollection
+            case 28:   //  HelpList.Model.StudentCollection
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_26_StudentCollection;
+                userType.Activator = Activate_28_StudentCollection;
                 userType.AddMemberName("FirstName");
                 userType.AddMemberName("LastName");
                 userType.AddMemberName("Mail");
@@ -515,16 +535,16 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  HelpList.Model.Student
+            case 29:   //  HelpList.Model.Student
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HelpList.Model.User"));
-                userType.Activator = Activate_27_Student;
+                userType.Activator = Activate_29_Student;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  HelpList.Model.User
+            case 30:   //  HelpList.Model.User
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_28_User;
+                userType.Activator = Activate_30_User;
                 userType.AddMemberName("FirstName");
                 userType.AddMemberName("LastName");
                 userType.AddMemberName("Mail");
@@ -534,27 +554,27 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Student>
+            case 31:   //  System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Student>
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HelpList.Model.Student>"));
-                userType.CollectionAdd = VectorAdd_29_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_31_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 30:   //  System.Collections.ObjectModel.Collection`1<HelpList.Model.Student>
+            case 32:   //  System.Collections.ObjectModel.Collection`1<HelpList.Model.Student>
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_30_Collection;
-                userType.CollectionAdd = VectorAdd_30_Collection;
+                userType.Activator = Activate_32_Collection;
+                userType.CollectionAdd = VectorAdd_32_Collection;
                 xamlType = userType;
                 break;
 
-            case 31:   //  Int32
+            case 33:   //  Int32
                 xamlType = new global::HelpList.HelpList_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  HelpList.Model.TeacherCollection
+            case 34:   //  HelpList.Model.TeacherCollection
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_32_TeacherCollection;
+                userType.Activator = Activate_34_TeacherCollection;
                 userType.AddMemberName("FirstName");
                 userType.AddMemberName("LastName");
                 userType.AddMemberName("Password");
@@ -568,24 +588,24 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 33:   //  HelpList.Model.Teacher
+            case 35:   //  HelpList.Model.Teacher
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HelpList.Model.User"));
-                userType.Activator = Activate_33_Teacher;
+                userType.Activator = Activate_35_Teacher;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Teacher>
+            case 36:   //  System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Teacher>
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HelpList.Model.Teacher>"));
-                userType.CollectionAdd = VectorAdd_34_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_36_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 35:   //  System.Collections.ObjectModel.Collection`1<HelpList.Model.Teacher>
+            case 37:   //  System.Collections.ObjectModel.Collection`1<HelpList.Model.Teacher>
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_35_Collection;
-                userType.CollectionAdd = VectorAdd_35_Collection;
+                userType.Activator = Activate_37_Collection;
+                userType.CollectionAdd = VectorAdd_37_Collection;
                 xamlType = userType;
                 break;
             }

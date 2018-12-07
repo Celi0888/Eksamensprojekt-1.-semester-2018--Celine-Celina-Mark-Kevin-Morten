@@ -29,17 +29,30 @@
             </AppBarButton>
             <AppBarButton
                 Foreground="White"
-                Icon="List"
-                Label="list" Click="AppBarButton_Click" />
-            <AppBarButton
-                Foreground="White"
                 Icon="Add"
-                Label="Create" />
-
+                Label="Create" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.View.PivotCreateClass"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
             <AppBarButton
                 Foreground="White"
                 Icon="Message"
                 Label="comment" />
+            <AppBarButton
+                Foreground="White"
+                Icon="Undo"
+                Label="Log Ud" >
+                <Interactivity:Interaction.Behaviors>
+                    <Core:EventTriggerBehavior EventName="Click">
+                        <Core:NavigateToPageAction TargetPage="HelpList.MainPage"/>
+                    </Core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+            </AppBarButton>
+
+            
 
 
         </StackPanel>
