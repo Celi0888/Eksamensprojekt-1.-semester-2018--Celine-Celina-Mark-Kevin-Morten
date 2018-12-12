@@ -264,12 +264,9 @@ namespace HelpList.HelpList_XamlTypeInfo
         private object Activate_26_HomePageTeacher() { return new global::HelpList.View.HomePageTeacher(); }
         private object Activate_27_MainPage() { return new global::HelpList.MainPage(); }
         private object Activate_28_StudentCollection() { return new global::HelpList.Model.StudentCollection(); }
-        private object Activate_29_Student() { return new global::HelpList.Model.Student(); }
-        private object Activate_30_User() { return new global::HelpList.Model.User(); }
         private object Activate_31_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>(); }
         private object Activate_32_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Student>(); }
         private object Activate_34_TeacherCollection() { return new global::HelpList.Model.TeacherCollection(); }
-        private object Activate_35_Teacher() { return new global::HelpList.Model.Teacher(); }
         private object Activate_36_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Teacher>(); }
         private object Activate_37_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HelpList.Model.Teacher>(); }
         private void VectorAdd_7_BehaviorCollection(object instance, object item)
@@ -537,14 +534,12 @@ namespace HelpList.HelpList_XamlTypeInfo
 
             case 29:   //  HelpList.Model.Student
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HelpList.Model.User"));
-                userType.Activator = Activate_29_Student;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
             case 30:   //  HelpList.Model.User
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_30_User;
                 userType.AddMemberName("FirstName");
                 userType.AddMemberName("LastName");
                 userType.AddMemberName("Mail");
@@ -590,7 +585,6 @@ namespace HelpList.HelpList_XamlTypeInfo
 
             case 35:   //  HelpList.Model.Teacher
                 userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HelpList.Model.User"));
-                userType.Activator = Activate_35_Teacher;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

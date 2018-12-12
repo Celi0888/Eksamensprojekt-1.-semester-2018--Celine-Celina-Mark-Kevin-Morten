@@ -27,79 +27,69 @@
                 HorizontalAlignment="Stretch" 
                 VerticalAlignment="Stretch" Margin="360,273,358,43">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="167*"/>
-                    <ColumnDefinition Width="4*"/>
-                    <ColumnDefinition Width="19*"/>
+                    <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
-
-                <RelativePanel Margin="30,-73,-19.6,73" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                    <Interactivity:Interaction.Behaviors>
-                        <Core:EventTriggerBehavior EventName="PointerPressed">
-                            <Core:NavigateToPageAction/>
-                        </Core:EventTriggerBehavior>
-                    </Interactivity:Interaction.Behaviors>
-                    <TextBox
-                        x:Name="Email"
+                <TextBox
+                        x:Name="TextBox_Email"
                         Width="250"
+                        Height="74"
                         Header="Email:"
-                        Text="Indtast din skole email her..." />
+                        Margin="28,0,28.4,262" />
 
-                    <PasswordBox 
-                        x:Name="Code"
+                <TextBox 
+                        x:Name="TextBox_Code"
                         Width="250"
+                        Height="74"
                         Header="Adgangskode:"
                         RelativePanel.Below="Email"
-                        Margin="0,30,0,0"
+                        Margin="28,100,28.4,156" RenderTransformOrigin="1.541,0.754"
                         />
 
-                    <Button
+                <Button
                         x:Name="LoginStudent"
                         Width="230"
                         Height="34"
-                        Margin="10,20,0,0"
+                        Margin="38,171,0,119"
                         Background="DarkBlue"
                         Content="Log ind som Studerende"
                         Foreground="White"
                         RelativePanel.Below="Code" >
-                        <Interactivity:Interaction.Behaviors>
-                            <Core:EventTriggerBehavior EventName="Click">
-                                <Core:NavigateToPageAction TargetPage="HelpList.View.HomePageStudent"/>
-                            </Core:EventTriggerBehavior>
-                        </Interactivity:Interaction.Behaviors>
-                    </Button>
-                    <Button
+                    <Interactivity:Interaction.Behaviors>
+                        <Core:EventTriggerBehavior EventName="StudentLogin_Click">
+                            <Core:CallMethodAction/>
+                        </Core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+
+                </Button>
+                <Button
                         x:Name="LoginTeacher"
                         Width="230"
                         Height="34"
-                        Margin="10,20,0,0"
+                        Margin="38,225,0,65"
                         Background="DarkRed"
                         Content="Log ind som Lærer"
                         Foreground="White"
                         RelativePanel.Below="LoginStudent" >
-                        <Interactivity:Interaction.Behaviors>
-                            <Core:EventTriggerBehavior EventName="Click">
-                                <Core:NavigateToPageAction TargetPage="HelpList.View.HomePageTeacher"/>
-                            </Core:EventTriggerBehavior>
-                        </Interactivity:Interaction.Behaviors>
-                    </Button>
+                    <Interactivity:Interaction.Behaviors>
+                        <Core:EventTriggerBehavior EventName="TeacherLogin_Click">
+                        </Core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                </Button>
 
-                    <Button
+                <Button
                         Width="230"
                         Height="34"
-                        Margin="10,20,0,0"
+                        Margin="40,279,0,11"
                         Background="White"
                         Content="Log ind som Admin"
                         Foreground="gray"
                         RelativePanel.Below="LoginTeacher" >
-                        <Interactivity:Interaction.Behaviors>
-                            <Core:EventTriggerBehavior EventName="Click">
-                                <Core:NavigateToPageAction TargetPage="HelpList.View.HomePageAdmin"/>
-                            </Core:EventTriggerBehavior>
-                        </Interactivity:Interaction.Behaviors>
-                    </Button>
-
-                </RelativePanel>
+                    <Interactivity:Interaction.Behaviors>
+                        <Core:EventTriggerBehavior EventName="AdminLogin_Click">
+                        </Core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                </Button>
             </Grid>
         </Grid>
     </Grid>

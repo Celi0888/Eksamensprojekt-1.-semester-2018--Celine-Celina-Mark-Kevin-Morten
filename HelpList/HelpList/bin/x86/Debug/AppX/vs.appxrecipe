@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-06T12:30:19.930</Modified>
+      <Modified>2018-12-12T18:53:57.919</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\HelpList.exe">
       <PackagePath>entrypoint\HelpList.exe</PackagePath>
-      <Modified>2018-12-06T12:30:19.472</Modified>
+      <Modified>2018-12-12T18:53:55.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -567,51 +567,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\HelpList.xr.xml">
       <PackagePath>HelpList.xr.xml</PackagePath>
-      <Modified>2018-12-06T11:57:51.629</Modified>
+      <Modified>2018-12-12T18:53:54.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.249</Modified>
+      <Modified>2018-12-12T18:53:54.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\CreatePageAdmin.xbf">
       <PackagePath>View\CreatePageAdmin.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.250</Modified>
+      <Modified>2018-12-12T18:53:54.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HelpListStudent.xbf">
       <PackagePath>View\HelpListStudent.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.250</Modified>
+      <Modified>2018-12-12T18:53:54.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HelpListTeacher.xbf">
       <PackagePath>View\HelpListTeacher.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.250</Modified>
+      <Modified>2018-12-12T18:53:54.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageAdmin.xbf">
       <PackagePath>View\HomePageAdmin.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.251</Modified>
+      <Modified>2018-12-12T18:53:54.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageStudent.xbf">
       <PackagePath>View\HomePageStudent.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.251</Modified>
+      <Modified>2018-12-12T18:53:54.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageTeacher.xbf">
       <PackagePath>View\HomePageTeacher.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.251</Modified>
+      <Modified>2018-12-12T18:53:54.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.252</Modified>
+      <Modified>2018-12-12T18:53:54.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateClass.xbf">
       <PackagePath>View\PivotCreateClass.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.252</Modified>
+      <Modified>2018-12-12T18:53:54.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateStudent.xbf">
       <PackagePath>View\PivotCreateStudent.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.252</Modified>
+      <Modified>2018-12-12T18:53:54.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateTeacher.xbf">
       <PackagePath>View\PivotCreateTeacher.xbf</PackagePath>
-      <Modified>2018-12-06T12:30:19.252</Modified>
+      <Modified>2018-12-12T18:53:54.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -620,11 +620,11 @@
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-06T11:50:50.105</Modified>
+      <Modified>2018-12-12T18:53:56.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Core\HelpList.exe">
       <PackagePath>HelpList.exe</PackagePath>
-      <Modified>2018-12-06T12:30:19.919</Modified>
+      <Modified>2018-12-12T18:53:57.896</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

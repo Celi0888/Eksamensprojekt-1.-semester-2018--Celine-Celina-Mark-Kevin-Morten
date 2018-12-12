@@ -1,4 +1,8 @@
-﻿namespace HelpList.Model
+﻿using System;
+using Windows.Storage.Search;
+using Windows.UI.Xaml.Controls;
+
+namespace HelpList.Model
 {
     class User
     {
@@ -42,11 +46,5 @@
             _passWord = password;
             _mail = mail;
         }
-
-        public User()
-        {
-
-        }
-
     }
 }

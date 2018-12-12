@@ -98,7 +98,6 @@ namespace HelpList.Model
             };
 
             TC.Add(new Teacher("Torben", "Heidemann", "torbenpass", "torben@gmail.com"));
-            _newTeacher = new Teacher();
 
             AddCommand = new RelayCommand(AddTeacherMethod);
             DeleteCommand = new RelayCommand(DeleteTeacherMethod);

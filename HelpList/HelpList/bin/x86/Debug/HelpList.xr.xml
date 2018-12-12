@@ -138,9 +138,6 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
       <RootMethod Name="GetAlignLeftWithPanel" />
       <RootMethod Name="SetAlignLeftWithPanel" />
@@ -156,7 +153,10 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransformOrigin" />
     </RootType>
     <RootType FullName="HelpList.View.HelpListStudent" />
     <RootType FullName="HelpList.View.HelpListTeacher" />
@@ -169,11 +169,7 @@
     <RootType FullName="HelpList.View.HomePageAdmin" />
     <RootType FullName="HelpList.View.HomePageStudent" />
     <RootType FullName="HelpList.View.HomePageTeacher" />
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Margin" />
-    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction" />
     <RootType FullName="HelpList.MainPage" />
     <RootType FullName="HelpList.Model.StudentCollection" />
     <RootType FullName="HelpList.Model.TeacherCollection" />

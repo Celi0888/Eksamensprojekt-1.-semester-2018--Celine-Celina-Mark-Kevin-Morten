@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using HelpList.View;
 
 namespace HelpList.Model
 {
@@ -10,15 +11,7 @@ namespace HelpList.Model
         {
 
         }
-        public Student()
-        {
-
-        }
-
-	    public void StudentLogin()
-	    {
-			
-	    }
+		
 	}
 
 }

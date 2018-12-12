@@ -97,8 +97,7 @@ namespace HelpList.Model
                 new Student("Kevin", "Filtenborg", "kevinpass","kevin@gmail.com"),
                 new Student("Celina", "Slots", "celinapass","celina@gmail.com")
             };
-
-            _newStudent = new Student();
+			
 
             AddCommand = new RelayCommand(AddStudentMethod);
             DeleteCommand = new RelayCommand(DeleteStudentMethod);
