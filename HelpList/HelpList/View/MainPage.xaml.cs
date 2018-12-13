@@ -27,37 +27,35 @@ namespace HelpList
 		{
 			this.InitializeComponent();
 		}
-		// Login til studerende
-		private void LoginStudent_Click(object o)
+
+		private void LoginStudent_OnClick(object sender, RoutedEventArgs e)
 		{
 			string textBoxMail = TextBox_Email.Text;
 			string textBoxPassword = TextBox_Code.Text;
-			if ((textBoxMail.Contains("student")) && (textBoxPassword.Contains("student")))
+			if ((textBoxMail.Contains("Student")) && (textBoxPassword.Contains("student")))
 			{
 				this.Frame.Navigate(typeof(HomePageStudent));
 			}
 		}
 
-		// Login til studerende
-		private void LoginTeacher_Click(object o)
+		private void LoginTeacher_OnClick(object sender, RoutedEventArgs e)
 		{
-			//string textBoxMail = TextBox_Email.Text;
-			//string textBoxPassword = TextBox_Code.Text;
-			//if ((textBoxMail.Text == "Teacher") && (textBoxPassword.Text == "teacher"))
-			//{
-			//	this.Frame.Navigate(typeof(HomePageStudent));
-			//}
+			string textBoxMail = TextBox_Email.Text;
+			string textBoxPassword = TextBox_Code.Text;
+			if ((textBoxMail.Contains("Teacher")) && (textBoxPassword.Contains("teacher")))
+			{
+				this.Frame.Navigate(typeof(HomePageTeacher));
+			}
 		}
 
-		// Login til studerende
-		private void LoginAdmin_Click(object o)
+		private void LoginAdmin_OnClick(object sender, RoutedEventArgs e)
 		{
-			//string textBoxMail = TextBox_Email.Text;
-			//string textBoxPassword = TextBox_Code.Text;
-			//if ((textBoxMail.Text == "Admin") && (textBoxPassword.Text == "admin"))
-			//{
-			//	this.Frame.Navigate(typeof(HomePageStudent));
-			//}
+			string textBoxMail = TextBox_Email.Text;
+			string textBoxPassword = TextBox_Code.Text;
+			if ((textBoxMail.Contains("Admin")) && (textBoxPassword.Contains("admin")))
+			{
+				this.Frame.Navigate(typeof(HomePageAdmin));
+			}
 		}
 	}
 }

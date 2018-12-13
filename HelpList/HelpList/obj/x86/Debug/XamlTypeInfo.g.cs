@@ -160,7 +160,7 @@ namespace HelpList.HelpList_XamlTypeInfo
             _typeNameTable[24] = "HelpList.View.HomePageAdmin";
             _typeNameTable[25] = "HelpList.View.HomePageStudent";
             _typeNameTable[26] = "HelpList.View.HomePageTeacher";
-            _typeNameTable[27] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
+            _typeNameTable[27] = "HelpList.Model.Login";
             _typeNameTable[28] = "HelpList.MainPage";
             _typeNameTable[29] = "HelpList.Model.StudentCollection";
             _typeNameTable[30] = "HelpList.Model.Student";
@@ -201,7 +201,7 @@ namespace HelpList.HelpList_XamlTypeInfo
             _typeTable[24] = typeof(global::HelpList.View.HomePageAdmin);
             _typeTable[25] = typeof(global::HelpList.View.HomePageStudent);
             _typeTable[26] = typeof(global::HelpList.View.HomePageTeacher);
-            _typeTable[27] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
+            _typeTable[27] = typeof(global::HelpList.Model.Login);
             _typeTable[28] = typeof(global::HelpList.MainPage);
             _typeTable[29] = typeof(global::HelpList.Model.StudentCollection);
             _typeTable[30] = typeof(global::HelpList.Model.Student);
@@ -264,7 +264,7 @@ namespace HelpList.HelpList_XamlTypeInfo
         private object Activate_24_HomePageAdmin() { return new global::HelpList.View.HomePageAdmin(); }
         private object Activate_25_HomePageStudent() { return new global::HelpList.View.HomePageStudent(); }
         private object Activate_26_HomePageTeacher() { return new global::HelpList.View.HomePageTeacher(); }
-        private object Activate_27_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
+        private object Activate_27_Login() { return new global::HelpList.Model.Login(); }
         private object Activate_28_MainPage() { return new global::HelpList.MainPage(); }
         private object Activate_29_StudentCollection() { return new global::HelpList.Model.StudentCollection(); }
         private object Activate_32_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>(); }
@@ -512,11 +512,10 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
-                userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_27_CallMethodAction;
-                userType.AddMemberName("MethodName");
-                userType.AddMemberName("TargetObject");
+            case 27:   //  HelpList.Model.Login
+                userType = new global::HelpList.HelpList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_27_Login;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -766,252 +765,232 @@ namespace HelpList.HelpList_XamlTypeInfo
             var that = (global::HelpList.Model.ClassObject)instance;
             that.ClassRoom = (global::System.String)Value;
         }
-        private object get_16_CallMethodAction_MethodName(object instance)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            return that.MethodName;
-        }
-        private void set_16_CallMethodAction_MethodName(object instance, object Value)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            that.MethodName = (global::System.String)Value;
-        }
-        private object get_17_CallMethodAction_TargetObject(object instance)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            return that.TargetObject;
-        }
-        private void set_17_CallMethodAction_TargetObject(object instance, object Value)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            that.TargetObject = (global::System.Object)Value;
-        }
-        private object get_18_StudentCollection_FirstName(object instance)
+        private object get_16_StudentCollection_FirstName(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.FirstName;
         }
-        private void set_18_StudentCollection_FirstName(object instance, object Value)
+        private void set_16_StudentCollection_FirstName(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.FirstName = (global::System.String)Value;
         }
-        private object get_19_StudentCollection_LastName(object instance)
+        private object get_17_StudentCollection_LastName(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.LastName;
         }
-        private void set_19_StudentCollection_LastName(object instance, object Value)
+        private void set_17_StudentCollection_LastName(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.LastName = (global::System.String)Value;
         }
-        private object get_20_StudentCollection_Mail(object instance)
+        private object get_18_StudentCollection_Mail(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.Mail;
         }
-        private void set_20_StudentCollection_Mail(object instance, object Value)
+        private void set_18_StudentCollection_Mail(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.Mail = (global::System.String)Value;
         }
-        private object get_21_StudentCollection_Password(object instance)
+        private object get_19_StudentCollection_Password(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.Password;
         }
-        private void set_21_StudentCollection_Password(object instance, object Value)
+        private void set_19_StudentCollection_Password(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.Password = (global::System.String)Value;
         }
-        private object get_22_StudentCollection_SelectedStudent(object instance)
+        private object get_20_StudentCollection_SelectedStudent(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.SelectedStudent;
         }
-        private void set_22_StudentCollection_SelectedStudent(object instance, object Value)
+        private void set_20_StudentCollection_SelectedStudent(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.SelectedStudent = (global::HelpList.Model.Student)Value;
         }
-        private object get_23_StudentCollection_NewStudent(object instance)
+        private object get_21_StudentCollection_NewStudent(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.NewStudent;
         }
-        private void set_23_StudentCollection_NewStudent(object instance, object Value)
+        private void set_21_StudentCollection_NewStudent(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.NewStudent = (global::HelpList.Model.Student)Value;
         }
-        private object get_24_StudentCollection_AddCommand(object instance)
+        private object get_22_StudentCollection_AddCommand(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.AddCommand;
         }
-        private void set_24_StudentCollection_AddCommand(object instance, object Value)
+        private void set_22_StudentCollection_AddCommand(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.AddCommand = (global::FV3.Helpers.RelayCommand)Value;
         }
-        private object get_25_StudentCollection_DeleteCommand(object instance)
+        private object get_23_StudentCollection_DeleteCommand(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.DeleteCommand;
         }
-        private void set_25_StudentCollection_DeleteCommand(object instance, object Value)
+        private void set_23_StudentCollection_DeleteCommand(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.DeleteCommand = (global::FV3.Helpers.RelayCommand)Value;
         }
-        private object get_26_StudentCollection_SC(object instance)
+        private object get_24_StudentCollection_SC(object instance)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             return that.SC;
         }
-        private void set_26_StudentCollection_SC(object instance, object Value)
+        private void set_24_StudentCollection_SC(object instance, object Value)
         {
             var that = (global::HelpList.Model.StudentCollection)instance;
             that.SC = (global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Student>)Value;
         }
-        private object get_27_User_FirstName(object instance)
+        private object get_25_User_FirstName(object instance)
         {
             var that = (global::HelpList.Model.User)instance;
             return that.FirstName;
         }
-        private void set_27_User_FirstName(object instance, object Value)
+        private void set_25_User_FirstName(object instance, object Value)
         {
             var that = (global::HelpList.Model.User)instance;
             that.FirstName = (global::System.String)Value;
         }
-        private object get_28_User_LastName(object instance)
+        private object get_26_User_LastName(object instance)
         {
             var that = (global::HelpList.Model.User)instance;
             return that.LastName;
         }
-        private void set_28_User_LastName(object instance, object Value)
+        private void set_26_User_LastName(object instance, object Value)
         {
             var that = (global::HelpList.Model.User)instance;
             that.LastName = (global::System.String)Value;
         }
-        private object get_29_User_Mail(object instance)
+        private object get_27_User_Mail(object instance)
         {
             var that = (global::HelpList.Model.User)instance;
             return that.Mail;
         }
-        private void set_29_User_Mail(object instance, object Value)
+        private void set_27_User_Mail(object instance, object Value)
         {
             var that = (global::HelpList.Model.User)instance;
             that.Mail = (global::System.String)Value;
         }
-        private object get_30_User_PassWord(object instance)
+        private object get_28_User_PassWord(object instance)
         {
             var that = (global::HelpList.Model.User)instance;
             return that.PassWord;
         }
-        private void set_30_User_PassWord(object instance, object Value)
+        private void set_28_User_PassWord(object instance, object Value)
         {
             var that = (global::HelpList.Model.User)instance;
             that.PassWord = (global::System.String)Value;
         }
-        private object get_31_User_Nr(object instance)
+        private object get_29_User_Nr(object instance)
         {
             var that = (global::HelpList.Model.User)instance;
             return that.Nr;
         }
-        private void set_31_User_Nr(object instance, object Value)
+        private void set_29_User_Nr(object instance, object Value)
         {
             var that = (global::HelpList.Model.User)instance;
             that.Nr = (global::System.Int32)Value;
         }
-        private object get_32_TeacherCollection_FirstName(object instance)
+        private object get_30_TeacherCollection_FirstName(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.FirstName;
         }
-        private void set_32_TeacherCollection_FirstName(object instance, object Value)
+        private void set_30_TeacherCollection_FirstName(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.FirstName = (global::System.String)Value;
         }
-        private object get_33_TeacherCollection_LastName(object instance)
+        private object get_31_TeacherCollection_LastName(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.LastName;
         }
-        private void set_33_TeacherCollection_LastName(object instance, object Value)
+        private void set_31_TeacherCollection_LastName(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.LastName = (global::System.String)Value;
         }
-        private object get_34_TeacherCollection_Password(object instance)
+        private object get_32_TeacherCollection_Password(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.Password;
         }
-        private void set_34_TeacherCollection_Password(object instance, object Value)
+        private void set_32_TeacherCollection_Password(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.Password = (global::System.String)Value;
         }
-        private object get_35_TeacherCollection_Mail(object instance)
+        private object get_33_TeacherCollection_Mail(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.Mail;
         }
-        private void set_35_TeacherCollection_Mail(object instance, object Value)
+        private void set_33_TeacherCollection_Mail(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.Mail = (global::System.String)Value;
         }
-        private object get_36_TeacherCollection_SelectedTeacher(object instance)
+        private object get_34_TeacherCollection_SelectedTeacher(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.SelectedTeacher;
         }
-        private void set_36_TeacherCollection_SelectedTeacher(object instance, object Value)
+        private void set_34_TeacherCollection_SelectedTeacher(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.SelectedTeacher = (global::HelpList.Model.Teacher)Value;
         }
-        private object get_37_TeacherCollection_NewTeacher(object instance)
+        private object get_35_TeacherCollection_NewTeacher(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.NewTeacher;
         }
-        private void set_37_TeacherCollection_NewTeacher(object instance, object Value)
+        private void set_35_TeacherCollection_NewTeacher(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.NewTeacher = (global::HelpList.Model.Teacher)Value;
         }
-        private object get_38_TeacherCollection_AddCommand(object instance)
+        private object get_36_TeacherCollection_AddCommand(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.AddCommand;
         }
-        private void set_38_TeacherCollection_AddCommand(object instance, object Value)
+        private void set_36_TeacherCollection_AddCommand(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.AddCommand = (global::FV3.Helpers.RelayCommand)Value;
         }
-        private object get_39_TeacherCollection_DeleteCommand(object instance)
+        private object get_37_TeacherCollection_DeleteCommand(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.DeleteCommand;
         }
-        private void set_39_TeacherCollection_DeleteCommand(object instance, object Value)
+        private void set_37_TeacherCollection_DeleteCommand(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.DeleteCommand = (global::FV3.Helpers.RelayCommand)Value;
         }
-        private object get_40_TeacherCollection_TC(object instance)
+        private object get_38_TeacherCollection_TC(object instance)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             return that.TC;
         }
-        private void set_40_TeacherCollection_TC(object instance, object Value)
+        private void set_38_TeacherCollection_TC(object instance, object Value)
         {
             var that = (global::HelpList.Model.TeacherCollection)instance;
             that.TC = (global::System.Collections.ObjectModel.ObservableCollection<global::HelpList.Model.Teacher>)Value;
@@ -1127,157 +1106,143 @@ namespace HelpList.HelpList_XamlTypeInfo
                 xamlMember.Getter = get_15_ClassObject_ClassRoom;
                 xamlMember.Setter = set_15_ClassObject_ClassRoom;
                 break;
-            case "Microsoft.Xaml.Interactions.Core.CallMethodAction.MethodName":
-                userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
-                xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "MethodName", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_CallMethodAction_MethodName;
-                xamlMember.Setter = set_16_CallMethodAction_MethodName;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.CallMethodAction.TargetObject":
-                userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
-                xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_CallMethodAction_TargetObject;
-                xamlMember.Setter = set_17_CallMethodAction_TargetObject;
-                break;
             case "HelpList.Model.StudentCollection.FirstName":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "FirstName", "String");
-                xamlMember.Getter = get_18_StudentCollection_FirstName;
-                xamlMember.Setter = set_18_StudentCollection_FirstName;
+                xamlMember.Getter = get_16_StudentCollection_FirstName;
+                xamlMember.Setter = set_16_StudentCollection_FirstName;
                 break;
             case "HelpList.Model.StudentCollection.LastName":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "LastName", "String");
-                xamlMember.Getter = get_19_StudentCollection_LastName;
-                xamlMember.Setter = set_19_StudentCollection_LastName;
+                xamlMember.Getter = get_17_StudentCollection_LastName;
+                xamlMember.Setter = set_17_StudentCollection_LastName;
                 break;
             case "HelpList.Model.StudentCollection.Mail":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "Mail", "String");
-                xamlMember.Getter = get_20_StudentCollection_Mail;
-                xamlMember.Setter = set_20_StudentCollection_Mail;
+                xamlMember.Getter = get_18_StudentCollection_Mail;
+                xamlMember.Setter = set_18_StudentCollection_Mail;
                 break;
             case "HelpList.Model.StudentCollection.Password":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "Password", "String");
-                xamlMember.Getter = get_21_StudentCollection_Password;
-                xamlMember.Setter = set_21_StudentCollection_Password;
+                xamlMember.Getter = get_19_StudentCollection_Password;
+                xamlMember.Setter = set_19_StudentCollection_Password;
                 break;
             case "HelpList.Model.StudentCollection.SelectedStudent":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "SelectedStudent", "HelpList.Model.Student");
-                xamlMember.Getter = get_22_StudentCollection_SelectedStudent;
-                xamlMember.Setter = set_22_StudentCollection_SelectedStudent;
+                xamlMember.Getter = get_20_StudentCollection_SelectedStudent;
+                xamlMember.Setter = set_20_StudentCollection_SelectedStudent;
                 break;
             case "HelpList.Model.StudentCollection.NewStudent":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "NewStudent", "HelpList.Model.Student");
-                xamlMember.Getter = get_23_StudentCollection_NewStudent;
-                xamlMember.Setter = set_23_StudentCollection_NewStudent;
+                xamlMember.Getter = get_21_StudentCollection_NewStudent;
+                xamlMember.Setter = set_21_StudentCollection_NewStudent;
                 break;
             case "HelpList.Model.StudentCollection.AddCommand":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "AddCommand", "FV3.Helpers.RelayCommand");
-                xamlMember.Getter = get_24_StudentCollection_AddCommand;
-                xamlMember.Setter = set_24_StudentCollection_AddCommand;
+                xamlMember.Getter = get_22_StudentCollection_AddCommand;
+                xamlMember.Setter = set_22_StudentCollection_AddCommand;
                 break;
             case "HelpList.Model.StudentCollection.DeleteCommand":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "DeleteCommand", "FV3.Helpers.RelayCommand");
-                xamlMember.Getter = get_25_StudentCollection_DeleteCommand;
-                xamlMember.Setter = set_25_StudentCollection_DeleteCommand;
+                xamlMember.Getter = get_23_StudentCollection_DeleteCommand;
+                xamlMember.Setter = set_23_StudentCollection_DeleteCommand;
                 break;
             case "HelpList.Model.StudentCollection.SC":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.StudentCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "SC", "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Student>");
-                xamlMember.Getter = get_26_StudentCollection_SC;
-                xamlMember.Setter = set_26_StudentCollection_SC;
+                xamlMember.Getter = get_24_StudentCollection_SC;
+                xamlMember.Setter = set_24_StudentCollection_SC;
                 break;
             case "HelpList.Model.User.FirstName":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.User");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "FirstName", "String");
-                xamlMember.Getter = get_27_User_FirstName;
-                xamlMember.Setter = set_27_User_FirstName;
+                xamlMember.Getter = get_25_User_FirstName;
+                xamlMember.Setter = set_25_User_FirstName;
                 break;
             case "HelpList.Model.User.LastName":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.User");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "LastName", "String");
-                xamlMember.Getter = get_28_User_LastName;
-                xamlMember.Setter = set_28_User_LastName;
+                xamlMember.Getter = get_26_User_LastName;
+                xamlMember.Setter = set_26_User_LastName;
                 break;
             case "HelpList.Model.User.Mail":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.User");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "Mail", "String");
-                xamlMember.Getter = get_29_User_Mail;
-                xamlMember.Setter = set_29_User_Mail;
+                xamlMember.Getter = get_27_User_Mail;
+                xamlMember.Setter = set_27_User_Mail;
                 break;
             case "HelpList.Model.User.PassWord":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.User");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "PassWord", "String");
-                xamlMember.Getter = get_30_User_PassWord;
-                xamlMember.Setter = set_30_User_PassWord;
+                xamlMember.Getter = get_28_User_PassWord;
+                xamlMember.Setter = set_28_User_PassWord;
                 break;
             case "HelpList.Model.User.Nr":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.User");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "Nr", "Int32");
-                xamlMember.Getter = get_31_User_Nr;
-                xamlMember.Setter = set_31_User_Nr;
+                xamlMember.Getter = get_29_User_Nr;
+                xamlMember.Setter = set_29_User_Nr;
                 break;
             case "HelpList.Model.TeacherCollection.FirstName":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "FirstName", "String");
-                xamlMember.Getter = get_32_TeacherCollection_FirstName;
-                xamlMember.Setter = set_32_TeacherCollection_FirstName;
+                xamlMember.Getter = get_30_TeacherCollection_FirstName;
+                xamlMember.Setter = set_30_TeacherCollection_FirstName;
                 break;
             case "HelpList.Model.TeacherCollection.LastName":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "LastName", "String");
-                xamlMember.Getter = get_33_TeacherCollection_LastName;
-                xamlMember.Setter = set_33_TeacherCollection_LastName;
+                xamlMember.Getter = get_31_TeacherCollection_LastName;
+                xamlMember.Setter = set_31_TeacherCollection_LastName;
                 break;
             case "HelpList.Model.TeacherCollection.Password":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "Password", "String");
-                xamlMember.Getter = get_34_TeacherCollection_Password;
-                xamlMember.Setter = set_34_TeacherCollection_Password;
+                xamlMember.Getter = get_32_TeacherCollection_Password;
+                xamlMember.Setter = set_32_TeacherCollection_Password;
                 break;
             case "HelpList.Model.TeacherCollection.Mail":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "Mail", "String");
-                xamlMember.Getter = get_35_TeacherCollection_Mail;
-                xamlMember.Setter = set_35_TeacherCollection_Mail;
+                xamlMember.Getter = get_33_TeacherCollection_Mail;
+                xamlMember.Setter = set_33_TeacherCollection_Mail;
                 break;
             case "HelpList.Model.TeacherCollection.SelectedTeacher":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "SelectedTeacher", "HelpList.Model.Teacher");
-                xamlMember.Getter = get_36_TeacherCollection_SelectedTeacher;
-                xamlMember.Setter = set_36_TeacherCollection_SelectedTeacher;
+                xamlMember.Getter = get_34_TeacherCollection_SelectedTeacher;
+                xamlMember.Setter = set_34_TeacherCollection_SelectedTeacher;
                 break;
             case "HelpList.Model.TeacherCollection.NewTeacher":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "NewTeacher", "HelpList.Model.Teacher");
-                xamlMember.Getter = get_37_TeacherCollection_NewTeacher;
-                xamlMember.Setter = set_37_TeacherCollection_NewTeacher;
+                xamlMember.Getter = get_35_TeacherCollection_NewTeacher;
+                xamlMember.Setter = set_35_TeacherCollection_NewTeacher;
                 break;
             case "HelpList.Model.TeacherCollection.AddCommand":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "AddCommand", "FV3.Helpers.RelayCommand");
-                xamlMember.Getter = get_38_TeacherCollection_AddCommand;
-                xamlMember.Setter = set_38_TeacherCollection_AddCommand;
+                xamlMember.Getter = get_36_TeacherCollection_AddCommand;
+                xamlMember.Setter = set_36_TeacherCollection_AddCommand;
                 break;
             case "HelpList.Model.TeacherCollection.DeleteCommand":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "DeleteCommand", "FV3.Helpers.RelayCommand");
-                xamlMember.Getter = get_39_TeacherCollection_DeleteCommand;
-                xamlMember.Setter = set_39_TeacherCollection_DeleteCommand;
+                xamlMember.Getter = get_37_TeacherCollection_DeleteCommand;
+                xamlMember.Setter = set_37_TeacherCollection_DeleteCommand;
                 break;
             case "HelpList.Model.TeacherCollection.TC":
                 userType = (global::HelpList.HelpList_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HelpList.Model.TeacherCollection");
                 xamlMember = new global::HelpList.HelpList_XamlTypeInfo.XamlMember(this, "TC", "System.Collections.ObjectModel.ObservableCollection`1<HelpList.Model.Teacher>");
-                xamlMember.Getter = get_40_TeacherCollection_TC;
-                xamlMember.Setter = set_40_TeacherCollection_TC;
+                xamlMember.Getter = get_38_TeacherCollection_TC;
+                xamlMember.Setter = set_38_TeacherCollection_TC;
                 break;
             }
             return xamlMember;

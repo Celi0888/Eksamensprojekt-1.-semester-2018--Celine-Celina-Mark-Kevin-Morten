@@ -5,18 +5,21 @@
     xmlns:local="using:HelpList.ViewModel"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Model="using:HelpList.Model"
     x:Class="HelpList.MainPage"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     mc:Ignorable="d">
+    <Page.DataContext>
+        <Model:Login/>
+    </Page.DataContext>
+
 
     <Grid RenderTransformOrigin="0.496,0.387">
         <Grid>
             <StackPanel
             Width="70"
             HorizontalAlignment="Left"
-            Background="DarkBlue">
-
-            </StackPanel>
+            Background="DarkBlue"/>
             <!-- Logo -->
             <TextBlock HorizontalAlignment="Center" FontSize="72" Text="HelpList" TextWrapping="Wrap" VerticalAlignment="Top" Margin="385,16,384,0"/>
             <!-- Overskrift -->
@@ -30,14 +33,15 @@
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBox x:ConnectionId='1'
+                <TextBlock x:ConnectionId='1' x:Name="TextBox_Ex" HorizontalAlignment="Center" FontSize="72" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Margin="385,16,384,0"/>
+                <TextBox x:ConnectionId='2'
                         x:Name="TextBox_Email"
                         Width="250"
                         Height="74"
                         Header="Email:"
                         Margin="28,0,28.4,262" />
 
-                <TextBox x:ConnectionId='2' 
+                <TextBox x:ConnectionId='3' 
                         x:Name="TextBox_Code"
                         Width="250"
                         Height="74"
@@ -46,7 +50,7 @@
                         Margin="28,100,28.4,156" RenderTransformOrigin="1.541,0.754"
                         />
 
-                <Button x:ConnectionId='3'
+                <Button x:ConnectionId='4'
                         x:Name="LoginStudent"
                         Width="230"
                         Height="34"
@@ -54,15 +58,11 @@
                         Background="DarkBlue"
                         Content="Log ind som Studerende"
                         Foreground="White"
-                        RelativePanel.Below="Code" >
-                    <Interactivity:Interaction.Behaviors>
-                        <Core:EventTriggerBehavior EventName="StudentLogin_Click">
-                            <Core:CallMethodAction/>
-                        </Core:EventTriggerBehavior>
-                    </Interactivity:Interaction.Behaviors>
+                        RelativePanel.Below="Code" Command="{Binding Mode=OneWay}"                              >
+                   
 
                 </Button>
-                <Button x:ConnectionId='4'
+                <Button x:ConnectionId='5'
                         x:Name="LoginTeacher"
                         Width="230"
                         Height="34"
@@ -70,24 +70,22 @@
                         Background="DarkRed"
                         Content="Log ind som Lærer"
                         Foreground="White"
-                        RelativePanel.Below="LoginStudent" >
+                        RelativePanel.Below="LoginStudent"                              >
                     <Interactivity:Interaction.Behaviors>
-                        <Core:EventTriggerBehavior EventName="TeacherLogin_Click">
-                        </Core:EventTriggerBehavior>
+                        <Core:EventTriggerBehavior EventName="TeacherLogin_Click"/>
                     </Interactivity:Interaction.Behaviors>
                 </Button>
 
-                <Button
+                <Button x:ConnectionId='6'
                         Width="230"
                         Height="34"
                         Margin="40,279,0,11"
                         Background="White"
                         Content="Log ind som Admin"
                         Foreground="gray"
-                        RelativePanel.Below="LoginTeacher" >
+                        RelativePanel.Below="LoginTeacher"                            >
                     <Interactivity:Interaction.Behaviors>
-                        <Core:EventTriggerBehavior EventName="AdminLogin_Click">
-                        </Core:EventTriggerBehavior>
+                        <Core:EventTriggerBehavior EventName="AdminLogin_Click"/>
                     </Interactivity:Interaction.Behaviors>
                 </Button>
             </Grid>

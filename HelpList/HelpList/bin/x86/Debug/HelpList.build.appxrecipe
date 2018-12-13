@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>bf80f506-d379-4fb6-a821-93f2f6025da9</PackageIdentityName>
     <PackageIdentityPublisher>CN=Mark</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\HelpList.exe">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\HelpList.exe">
       <PackagePath>entrypoint\HelpList.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -376,98 +376,98 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\classroom.jpg">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\classroom.jpg">
       <PackagePath>Assets\classroom.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-1.PNG">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-1.PNG">
       <PackagePath>Assets\logoHL-1.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-2.PNG">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-2.PNG">
       <PackagePath>Assets\logoHL-2.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-3.PNG">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-3.PNG">
       <PackagePath>Assets\logoHL-3.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-4.PNG">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-4.PNG">
       <PackagePath>Assets\logoHL-4.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-5.PNG">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\logoHL-5.PNG">
       <PackagePath>Assets\logoHL-5.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\HelpList.xr.xml">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\HelpList.xr.xml">
       <PackagePath>HelpList.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\CreatePageAdmin.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\CreatePageAdmin.xbf">
       <PackagePath>View\CreatePageAdmin.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HelpListStudent.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HelpListStudent.xbf">
       <PackagePath>View\HelpListStudent.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HelpListTeacher.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HelpListTeacher.xbf">
       <PackagePath>View\HelpListTeacher.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageAdmin.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageAdmin.xbf">
       <PackagePath>View\HomePageAdmin.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageStudent.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageStudent.xbf">
       <PackagePath>View\HomePageStudent.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageTeacher.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\HomePageTeacher.xbf">
       <PackagePath>View\HomePageTeacher.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\MainPage.xbf">
       <PackagePath>View\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateClass.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateClass.xbf">
       <PackagePath>View\PivotCreateClass.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateStudent.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateStudent.xbf">
       <PackagePath>View\PivotCreateStudent.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateTeacher.xbf">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\View\PivotCreateTeacher.xbf">
       <PackagePath>View\PivotCreateTeacher.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Core\HelpList.exe">
+    <AppxPackagedFile Include="C:\Users\cecce\Source\Repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\bin\x86\Debug\Core\HelpList.exe">
       <PackagePath>HelpList.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
