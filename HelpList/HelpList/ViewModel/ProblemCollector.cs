@@ -7,25 +7,15 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using FV3.Helpers;
-using HelpList.Annotations;
 using HelpList.Model;
 using HelpList.ViewModel;
 
 
 namespace HelpList.ViewModel
 {
-    class ProblemCollector : INotifyPropertyChanged
+    class ProblemCollector 
     {
-        #region PropertyChangeSupport
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
-
+        
         #region Instance Field
 
         private ObservableCollection<Problem> _problems;
@@ -96,7 +86,6 @@ namespace HelpList.ViewModel
             set
             {
                 _selectedProblem = value;
-                OnPropertyChanged();
             }
         }
 
@@ -110,7 +99,6 @@ namespace HelpList.ViewModel
         public void Add()
         {
             _problems.Add(new Problem(Name, Topic, Location, Description));
-            OnPropertyChanged();
         }
 
         public void Remove()
@@ -118,14 +106,12 @@ namespace HelpList.ViewModel
             if (SelectedProblem != null)
             {
                 _problems.Remove(_selectedProblem);
-                OnPropertyChanged();
             }
         }
 
         public void RemoveAll()
         {
             _problems.Clear();
-            OnPropertyChanged();
         }
         #endregion
     }

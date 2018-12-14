@@ -98,6 +98,7 @@
     <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Model\ClassCollection.cs" />
     <Compile Include="Model\ClassObject.cs" />
+    <Compile Include="Model\News.cs" />
     <Compile Include="Model\Problem.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\StudentClass.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Model\TeacherCollection.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="ViewModel\ClassList.cs" />
+    <Compile Include="ViewModel\NewsVM.cs" />
     <Compile Include="ViewModel\ProblemCollector.cs" />
     <Compile Include="View\CreatePageAdmin.xaml.cs">
       <DependentUpon>CreatePageAdmin.xaml</DependentUpon>
