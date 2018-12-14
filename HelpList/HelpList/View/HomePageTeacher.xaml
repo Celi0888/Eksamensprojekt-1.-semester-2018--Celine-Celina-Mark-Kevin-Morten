@@ -33,7 +33,6 @@
             <AppBarButton
                 Foreground="White"
                 Icon="Home"
-                
                 Label="Home" />
             <AppBarButton
                 Foreground="White"
@@ -55,6 +54,9 @@
         </StackPanel>
 
         <!-- Overskrift -->
+
+        <!--<Image Grid.Row="0" Grid.Column="2" Height="100" Source="/Assets/logoHL-5.PNG"/>-->
+
         <TextBlock 
             Grid.Row ="0"
             Grid.ColumnSpan ="4"
