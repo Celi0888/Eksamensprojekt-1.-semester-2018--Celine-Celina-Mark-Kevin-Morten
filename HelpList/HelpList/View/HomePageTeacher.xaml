@@ -10,45 +10,258 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
         <StackPanel
+            Grid.Column ="0"
+            Grid.RowSpan ="4"
             Width="70"
             HorizontalAlignment="Left"
             Background="DarkBlue">
             <AppBarButton
                 Foreground="White"
                 Icon="Home"
+                
                 Label="Home" />
             <AppBarButton
                 Foreground="White"
                 Icon="List"
-                Label="List" />
+                Label="HelpList" />
             <AppBarButton
                 Foreground="White"
-                Icon="Add"
-                Label="Create"/>
+                Icon="Contact"
+                Label="Classes" />
             <AppBarButton
                 Foreground="White"
                 Icon="Message"
                 Label="comment" />
             <AppBarButton
                 Foreground="White"
-                Icon="Undo"
-                Label="Log Ud" >
-                <Interactivity:Interaction.Behaviors>
-                    <Core:EventTriggerBehavior EventName="Click">
-                        <Core:NavigateToPageAction TargetPage="HelpList.MainPage"/>
-                    </Core:EventTriggerBehavior>
-                </Interactivity:Interaction.Behaviors>
-            </AppBarButton>
-
+                Icon="Find"
+                Label="Search" />
 
         </StackPanel>
+
+        <!-- Overskrift -->
         <TextBlock 
-            HorizontalAlignment="Left" 
-            FontSize="20" 
-            Text="Velkommen Teacher" 
-            TextWrapping="Wrap"
-            VerticalAlignment="Top" 
-            Margin="117,174,0,0"/>
+            Grid.Row ="0"
+            Grid.ColumnSpan ="4"
+            HorizontalAlignment="Center" 
+            FontSize="48"
+            Text="HelpList" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"/>
+
+        <!-- News -->
+        <RelativePanel Grid.Column="2" Grid.ColumnSpan="2"  Grid.Row="1" Margin="0,0,20,10">
+            <TextBlock
+                x:Name="NewsTextBlock"
+                Text="News"
+                FontSize="24"
+                RelativePanel.AlignTopWithPanel="True"
+                RelativePanel.AlignLeftWithPanel="True"/>
+
+            <GridView RelativePanel.Below="NewsTextBlock">
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativePanel>
+                            <TextBlock 
+                                x:Name="TitleTextBlock"
+                                RelativePanel.AlignLeftWithPanel="True"/>
+                            <TextBlock
+                                x:Name="NewsContent"
+                                RelativePanel.AlignLeftWithPanel="True"
+                                RelativePanel.Below="TitleTextBlock"/>
+                        </RelativePanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+
+        </RelativePanel>
+
+
+        <!-- Problemfolder-->
+        <RelativePanel Grid.Column="2" Grid.Row="2" Margin="0,0,30,10">
+
+            <TextBlock
+                x:Name="SavedProblemsTextBlock"
+                Text="Saved Problems"
+                FontSize="24"
+                RelativePanel.AlignTopWithPanel="True"/>
+
+            <TextBlock
+                x:Name="ProblemsSubtitle"
+                Text="Recently saved problems"
+                RelativePanel.Below="SavedProblemsTextBlock"/>
+
+            <ListView
+                Margin="10,5,10,0"
+                RelativePanel.Below="ProblemsSubtitle">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativePanel>
+                            <TextBlock
+                                x:Name="DateText"
+                                Text="{Binding Date, Mode=OneWay}"/>
+                            <TextBlock 
+                                x:Name="NameTextBlock"
+                                Text="Name:"
+                                TextWrapping="Wrap"
+                                RelativePanel.Below="DateText"/>
+                            <TextBlock
+                                x:Name="NameText"
+                                Text="{Binding Name, Mode=OneWay}"
+                                RelativePanel.RightOf="NameTextBlock"/>
+                            <TextBlock
+                                x:Name="TopicTextBlock"
+                                Text="Topic:"
+                                TextWrapping="Wrap"
+                                RelativePanel.Below="NameTextBlock"/>
+                            <TextBlock
+                                x:Name="TopicText"
+                                Text="{Binding Topic, Mode=OneWay}"
+                                RelativePanel.RightOf="TopicTextBlock"/>
+                            <TextBlock
+                                x:Name="DescriptionTextBlock"
+                                Text="Description"
+                                TextWrapping="Wrap"
+                                RelativePanel.Below="TopicTextBlock"/>
+                            <TextBlock
+                                x:Name="DescriptionText"
+                                Text="{Binding Description, Mode=OneWay}"
+                                RelativePanel.RightOf="DescriptionTextBlock"/>
+                        </RelativePanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button
+                Margin="0,5,20,0"
+                MinHeight="20"
+                MinWidth="60"
+                Content="See All"
+                FontSize="15"
+                RelativePanel.AlignBottomWithPanel="True"
+                RelativePanel.AlignRightWithPanel="True"/>
+        </RelativePanel>
+
+        <!-- Choose your class for today -->
+        <RelativePanel Grid.Column="3" Grid.Row="2" Margin="0,0,20,10">
+
+            <TextBlock 
+                x:Name="HelpListTextBlock"
+                Text="Available HelpLists"
+                FontSize="24"
+                RelativePanel.AlignTopWithPanel="True"/>
+
+            <TextBlock 
+                x:Name="HelpListSubtitle"
+                Text="Choose todays class to access their HelpList"
+                RelativePanel.Below="HelpListTextBlock"
+                RelativePanel.AlignLeftWithPanel="True"/>
+
+            <ListView
+                ItemsSource="{Binding Mode=OneWay}"
+                SelectedItem="{Binding SelectedClass, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                Margin="10,5,10,0"
+                RelativePanel.Below="HelpListSubtitle"
+                RelativePanel.AlignLeftWithPanel="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativePanel>
+                            <TextBlock
+                                x:Name="ClassName"
+                                Text="{Binding ClassName, Mode=OneWay}"
+                                RelativePanel.AlignLeftWithPanel="True"/>
+                            <TextBlock
+                                x:Name="ClassRoom"
+                                Text="{Binding ClassRoom, Mode=OneWay}"
+                                RelativePanel.Below="ClassName"/>
+                        </RelativePanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button
+                Margin="0,5,20,0"
+                MinHeight="20"
+                MinWidth="60"
+                Content="See All"
+                FontSize="15"
+                RelativePanel.AlignBottomWithPanel="True"
+                RelativePanel.AlignRightWithPanel="True"/>
+        </RelativePanel>
+
+        <!-- Forum -->
+
+        <RelativePanel Grid.Column="2" Grid.ColumnSpan="2"  Grid.Row="3" Margin="0,0,20,10">
+            <TextBlock
+                x:Name="ForumTextBlock"
+                Text="Forum"
+                FontSize="24"
+                RelativePanel.AlignTopWithPanel="True"
+                RelativePanel.AlignLeftWithPanel="True"/>
+            <TextBlock 
+                x:Name="ForumSubtitle"
+                Text="recently added questions"
+                FontSize="15"
+                RelativePanel.Below="ForumTextBlock"
+                RelativePanel.AlignLeftWithPanel="True"/>
+
+            <GridView RelativePanel.Below="ForumSubtitle">
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <RelativePanel>
+                            <TextBlock
+                                x:Name="Date"
+                                RelativePanel.AlignTopWithPanel="True"
+                                RelativePanel.AlignLeftWithPanel="True"/>
+
+                            <TextBlock
+                                x:Name="NameTextBlock"
+                                Text="Name:"
+                                RelativePanel.Below="Date"/>
+
+                            <TextBlock
+                                x:Name="TopicTextBlock"
+                                Text="Topic:"
+                                RelativePanel.Below="NameTextBlock"/>
+
+                            <TextBlock
+                                x:Name="Name"
+                                RelativePanel.RightOf="NameTextBlock"/>
+
+                            <TextBlock
+                                x:Name="Topic"
+                                RelativePanel.RightOf="TopicTextBlock"/>
+                        </RelativePanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+
+            <Button
+                MinHeight="20" 
+                MinWidth="60" 
+                Content="See All" 
+                FontSize="15"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                RelativePanel.AlignBottomWithPanel="True"
+                RelativePanel.AlignRightWithPanel="True"/>
+        </RelativePanel>
+
+        <!--#endregion-->
     </Grid>
 </Page>
