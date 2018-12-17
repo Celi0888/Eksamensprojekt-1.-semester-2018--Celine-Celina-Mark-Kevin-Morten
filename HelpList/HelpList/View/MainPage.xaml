@@ -39,7 +39,8 @@
                         Width="250"
                         Height="74"
                         Header="Email:"
-                        Margin="28,0,28.4,262" />
+                        Margin="28,0,28.4,262" 
+                        DataContext="{Binding Mail, Mode=OneWay}" />
 
                 <TextBox 
                         x:Name="TextBox_Code"
@@ -47,9 +48,10 @@
                         Height="74"
                         Header="Adgangskode:"
                         RelativePanel.Below="Email"
-                        Margin="28,100,28.4,156" RenderTransformOrigin="1.541,0.754"
-                        />
-
+                        Margin="28,100,28.4,156" 
+                        RenderTransformOrigin="1.541,0.754"
+                        DataContext="{Binding Password, Mode=OneWay}" />
+                
                 <Button
                         x:Name="LoginStudent"
                         Width="230"
@@ -58,9 +60,8 @@
                         Background="DarkBlue"
                         Content="Log ind som Studerende"
                         Foreground="White"
-                        RelativePanel.Below="Code" Command="{Binding Mode=OneWay}" Click="LoginStudent_OnClick" >
-                   
-
+                        RelativePanel.Below="Code" 
+                        Click="LoginStudent_OnClick" >      
                 </Button>
                 <Button
                         x:Name="LoginTeacher"

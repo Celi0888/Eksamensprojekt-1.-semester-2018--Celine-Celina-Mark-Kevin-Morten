@@ -7,39 +7,62 @@ using HelpList.View;
 
 namespace HelpList.Model
 {
-    class Login
-    {
-		// Login til studerende
-		private void LoginStudent_Click(object o)
+	class Login : User
+	{
+		// instant fields
+		private string _mail;
+		private string _password;
+
+		// propertis
+		public string Mail
 		{
-			//string textBoxMail = TextBox_Email.Text;
-			//string textBoxPassword = TextBox_Code.Text;
-			//if ((textBoxMail.Contains("student")) && (textBoxPassword.Contains("student")))
+			get { return _mail; }
+			set { _mail = value; }
+		}
+
+		public string Password
+		{
+			get { return _password; }
+			set { _password = value; }
+		}
+
+		// constructor
+		public Login(string firstName, string lastName, string password, string mail) : base(firstName, lastName,
+			password, mail)
+		{
+			_mail = mail;
+			_password = password;
+		}
+
+
+		// Login til studerende
+		public void LoginStudent()
+		{
+			// lav en foreach med collector i SC (Student Collection)
+			//foreach (var sc in SC)
 			//{
-			//	this.Frame.Navigate(typeof(HomePageStudent));
+				// lav en if statement der tjekker på om brugernavnet eksistere i Student Collection
 			//}
 		}
 
 		// Login til studerende
-		private void LoginTeacher_Click(object o, EventArgs et)
+		public void LoginTeacher()
 		{
-			//string textBoxMail = TextBox_Email.Text;
-			//string textBoxPassword = TextBox_Code.Text;
-			//if ((textBoxMail.Text == "Teacher") && (textBoxPassword.Text == "teacher"))
+			// lav en foreach med collector i SC (Teacher Collection)
+			//foreach (var sc in SC)
 			//{
-			//	this.Frame.Navigate(typeof(HomePageStudent));
+				// lav en if statement der tjekker på om brugernavnet eksistere i Teacher Collection
 			//}
 		}
 
 		// Login til studerende
-		private void LoginAdmin_Click(object o)
-	    {
-		    //string textBoxMail = TextBox_Email.Text;
-		    //string textBoxPassword = TextBox_Code.Text;
-		    //if ((textBoxMail.Text == "Admin") && (textBoxPassword.Text == "admin"))
-		    //{
-		    //	this.Frame.Navigate(typeof(HomePageStudent));
-		    //}
-	    }
+		private void LoginAdmin()
+		{
+			// lav en foreach med collector i AS (Admin Collection)
+			//foreach (var sc in AC)
+			//{
+				// lav en if statement der tjekker på om brugernavnet eksistere i Admin Collection
+			//}
+		}
 	}
 }

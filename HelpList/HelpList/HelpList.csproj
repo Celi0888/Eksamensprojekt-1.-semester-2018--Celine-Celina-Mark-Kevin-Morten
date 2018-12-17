@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Model\AdminCollection.cs" />
     <Compile Include="Model\ClassCollection.cs" />
     <Compile Include="Model\ClassObject.cs" />
     <Compile Include="Model\Login.cs" />
