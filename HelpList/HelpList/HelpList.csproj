@@ -118,8 +118,9 @@
     <Compile Include="View\HelpListTeacher.xaml.cs">
       <DependentUpon>HelpListTeacher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\HomePageAdmin.xaml.cs">
+    <Compile Include="..\..\..\..\..\..\Desktop\HomePageAdmin.xaml.cs">
       <DependentUpon>HomePageAdmin.xaml</DependentUpon>
+      <Link>View\HomePageAdmin.xaml.cs</Link>
     </Compile>
     <Compile Include="View\HomePageStudent.xaml.cs">
       <DependentUpon>HomePageStudent.xaml</DependentUpon>
@@ -174,9 +175,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\HomePageAdmin.xaml">
+    <Page Include="..\..\..\..\..\..\Desktop\HomePageAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <Link>View\HomePageAdmin.xaml</Link>
     </Page>
     <Page Include="View\HomePageStudent.xaml">
       <SubType>Designer</SubType>
