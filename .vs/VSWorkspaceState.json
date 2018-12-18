@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\HelpList",
-    "\\HelpList\\HelpList",
-    "\\HelpList\\HelpList\\View"
+    "\\HelpList\\HelpList"
   ],
-  "SelectedNode": "\\HelpList\\HelpList\\View\\PivotCreateClass.xaml",
+  "SelectedNode": "\\HelpList\\HelpList.sln",
   "PreviewInSolutionExplorer": false
 }
