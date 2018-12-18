@@ -99,6 +99,7 @@
     <Compile Include="Model\ClassCollection.cs" />
     <Compile Include="Model\ClassObject.cs" />
     <Compile Include="Model\Forum.cs" />
+    <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Problem.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\StudentClass.cs" />
