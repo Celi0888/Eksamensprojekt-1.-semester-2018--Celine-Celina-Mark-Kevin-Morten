@@ -11,6 +11,7 @@
     <RootPropertyPathName Name="Problems" />
     <RootPropertyPathName Name="AddCommand" />
     <RootPropertyPathName Name="RemoveAllCommand" />
+    <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="CC" />
     <RootPropertyPathName Name="SelectedClass" />
     <RootPropertyPathName Name="ClassName" />
@@ -121,7 +122,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
@@ -170,7 +170,6 @@
     <RootType FullName="HelpList.View.HomePageAdmin" />
     <RootType FullName="HelpList.View.HomePageStudent" />
     <RootType FullName="HelpList.View.HomePageTeacher" />
-    <RootType FullName="HelpList.Model.Login" />
     <RootType FullName="HelpList.MainPage" />
     <RootType FullName="HelpList.Model.StudentCollection" />
     <RootType FullName="HelpList.Model.TeacherCollection" />

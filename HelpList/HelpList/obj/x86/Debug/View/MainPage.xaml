@@ -29,8 +29,8 @@
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="TextBox_Ex" HorizontalAlignment="Center" FontSize="72" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Margin="385,16,384,0"/>
-                <TextBox
+                <TextBlock x:ConnectionId='1' x:Name="TextBox_Ex" HorizontalAlignment="Center" FontSize="72" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Margin="385,16,384,0"/>
+                <TextBox x:ConnectionId='2'
                         x:Name="TextBox_Email"
                         Width="250"
                         Height="74"
@@ -39,7 +39,7 @@
                         Text="{Binding Email, Mode=TwoWay}"
                     />
 
-                <TextBox 
+                <TextBox x:ConnectionId='3' 
                         x:Name="TextBox_Code"
                         Width="250"
                         Height="74"
@@ -50,7 +50,7 @@
                         Text="{Binding Email, Mode=TwoWay}"
                     />
                 <!-- login student -->
-                <Button
+                <Button x:ConnectionId='4'
                         x:Name="LoginStudent"
                         Width="230"
                         Height="34"
@@ -61,7 +61,7 @@
                         RelativePanel.Below="Code" 
                 />
                 <!-- login teacher -->
-                <Button
+                <Button x:ConnectionId='5'
                         x:Name="LoginTeacher"
                         Width="230"
                         Height="34"
@@ -83,3 +83,4 @@
         </Grid>
     </Grid>
 </Page>
+

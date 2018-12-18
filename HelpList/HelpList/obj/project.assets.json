@@ -24523,8 +24523,6 @@
       "type": "package",
       "path": "system.net.http/4.1.0",
       "files": [
-        "System.Net.Http.4.1.0.nupkg.sha512",
-        "System.Net.Http.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/Xamarinmac20/_._",
@@ -24595,7 +24593,9 @@
         "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll",
         "runtimes/win/lib/net46/System.Net.Http.dll",
         "runtimes/win/lib/netcore50/System.Net.Http.dll",
-        "runtimes/win/lib/netstandard1.3/System.Net.Http.dll"
+        "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
+        "system.net.http.4.1.0.nupkg.sha512",
+        "system.net.http.nuspec"
       ]
     },
     "System.Net.Http.Rtc/4.0.1": {
@@ -27614,11 +27614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cecce\\source\\repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\HelpList.csproj",
+      "projectUniqueName": "C:\\Users\\cecce\\Source\\Repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\HelpList.csproj",
       "projectName": "HelpList",
-      "projectPath": "C:\\Users\\cecce\\source\\repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\HelpList.csproj",
+      "projectPath": "C:\\Users\\cecce\\Source\\Repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\HelpList.csproj",
       "packagesPath": "C:\\Users\\cecce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cecce\\source\\repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\obj\\",
+      "outputPath": "C:\\Users\\cecce\\Source\\Repos\\Celi0888\\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\\HelpList\\HelpList\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
