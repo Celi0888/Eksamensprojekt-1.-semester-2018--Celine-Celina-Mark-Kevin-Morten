@@ -265,3 +265,4 @@ C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Ce
 C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\Microsoft.Xaml.Interactions.pri.xml
 C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\cecce\source\repos\Celi0888\Eksamensprojekt-1.-semester-2018--Celine-Celina-Mark-Kevin-Morten\HelpList\HelpList\obj\x86\Debug\HelpList.csprojAssemblyReference.cache

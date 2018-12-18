@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using HelpList.View;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,35 +27,36 @@ namespace HelpList
 		{
 			this.InitializeComponent();
 		}
+		
 
-		private void LoginStudent_OnClick(object sender, RoutedEventArgs e)
+		private void LoginStudent_Click(object sender, RoutedEventArgs e)
 		{
-			//	string textBoxMail = TextBox_Email.Text;
-			//	string textBoxPassword = TextBox_Code.Text;
-			//	if ((textBoxMail.Contains("Student")) && (textBoxPassword.Contains("student")))
-			//	{
-			//		this.Frame.Navigate(typeof(HomePageStudent));
-			//	}
+			string textBoxMail = TextBox_Email.Text;
+			string textBoxPassword = TextBox_Code.Password;
+			if ((textBoxMail.Contains("student@gmail.com")) && (textBoxPassword.Contains("studentpass")))
+			{
+				this.Frame.Navigate(typeof(HomePageStudent));
+			}
 		}
 
-		private void LoginTeacher_OnClick(object sender, RoutedEventArgs e)
+		private void LoginTeacher_Click(object sender, RoutedEventArgs e)
 		{
-			//	string textBoxMail = TextBox_Email.Text;
-			//	string textBoxPassword = TextBox_Code.Text;
-			//	if ((textBoxMail.Contains("Teacher")) && (textBoxPassword.Contains("teacher")))
-			//	{
-			//		this.Frame.Navigate(typeof(HomePageTeacher));
-			//	}
+			string textBoxMail = TextBox_Email.Text;
+			string textBoxPassword = TextBox_Code.Password;
+			if ((textBoxMail.Contains("teacher@gmail.com")) && (textBoxPassword.Contains("teacherpass")))
+			{
+				this.Frame.Navigate(typeof(HomePageTeacher));
+			}
 		}
 
-		private void LoginAdmin_OnClick(object sender, RoutedEventArgs e)
+		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			//	string textBoxMail = TextBox_Email.Text;
-			//	string textBoxPassword = TextBox_Code.Text;
-			//	if ((textBoxMail.Contains("Admin")) && (textBoxPassword.Contains("admin")))
-			//	{
-			//		this.Frame.Navigate(typeof(HomePageAdmin));
-			//	}
+			string textBoxMail = TextBox_Email.Text;
+			string textBoxPassword = TextBox_Code.Password;
+			if ((textBoxMail.Contains("admin@gmail.com")) && (textBoxPassword.Contains("adminpass")))
+			{
+				this.Frame.Navigate(typeof(HomePageAdmin));
+			}
 		}
 	}
 }

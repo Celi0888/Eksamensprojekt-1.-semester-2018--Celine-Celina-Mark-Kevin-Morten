@@ -36,47 +36,47 @@ namespace HelpList.Model
 		public void LoginStudent()
 		{
 			// lav en foreach med collector i SC (Student Collection)
-			//foreach (var sc in LoginSC.SC)
-			//{
-			//	// lav en if statement der tjekker på om brugernavnet eksistere i Student Collection
-			//	if (LoginSC.Mail.Equals(Mail) && LoginSC.Password.Equals(PassWord))
-			//	{
-			//		// gå til HomePageStudent
-			//		((Frame) Window.Current.Content).Navigate(typeof(HomePageStudent));
-			//	}
-			//}
+			foreach (var sc in LoginSC.SC)
+			{
+				// lav en if statement der tjekker på om brugernavnet eksistere i Student Collection
+				if (Mail.Equals(LoginSC.Mail) && PassWord.Equals(LoginSC.Password))
+				{
+					// gå til HomePageStudent
+					((Frame)Window.Current.Content).Navigate(typeof(HomePageStudent));
+				}
+			}
 		}
 
 		// Login til Teacher
 		public void LoginTeacher()
 		{
-			// lav en foreach med collector i SC (Teacher Collection)
-			//foreach (var tc in LoginTC.TC)
-			//{
-			//	// lav en if statement der tjekker på om brugernavnet eksistere i Teacher Collection
-			//	if (_mail.Equals(LoginTC.Mail) && _password.Equals(LoginTC.Password))
-			//	{
-			//		// gå til HomePageTeacher
-			//		((Frame)Window.Current.Content).Navigate(typeof(HomePageTeacher));
+			//lav en foreach med collector i SC(Teacher Collection)
+			foreach (var tc in LoginTC.TC)
+			{
+				// lav en if statement der tjekker på om brugernavnet eksistere i Teacher Collection
+				if (Mail.Equals(LoginTC.Mail) && PassWord.Equals(LoginTC.Password))
+				{
+					// gå til HomePageTeacher
+					((Frame)Window.Current.Content).Navigate(typeof(HomePageTeacher));
 
-			//	}
-			//}
+				}
+			}
 		}
 
 		// Login til Admin
 		public void LoginAdmin()
 		{
 			// lav en foreach med collector i AS (Admin Collection)
-			//foreach (var ac in LoginAC.AC)
-			//{
-			//	// lav en if statement der tjekker på om brugernavnet eksistere i Admin Collection
-			//	if (_mail.Equals(LoginAC.Mail) && _password.Equals(LoginAC.Password))
-			//	{
-			//		// gå til HomePageAdmin
-			//		((Frame)Window.Current.Content).Navigate(typeof(HomePageAdmin));
+			foreach (var ac in LoginAC.AC)
+			{
+				// lav en if statement der tjekker på om brugernavnet eksistere i Admin Collection
+				if (Mail.Equals(LoginAC.Mail) && PassWord.Equals(LoginAC.Password))
+				{
+					// gå til HomePageAdmin
+					((Frame)Window.Current.Content).Navigate(typeof(HomePageAdmin));
 
-			//	}
-			//}
+				}
+			}
 		}
 	}
 }

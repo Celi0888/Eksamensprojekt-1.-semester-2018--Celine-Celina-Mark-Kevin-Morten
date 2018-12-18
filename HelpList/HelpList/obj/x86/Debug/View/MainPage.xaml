@@ -36,10 +36,9 @@
                         Height="74"
                         Header="Email:"
                         Margin="28,0,28.4,262" 
-                        Text="{Binding Email, Mode=TwoWay}"
                     />
 
-                <TextBox x:ConnectionId='3' 
+                <PasswordBox x:ConnectionId='3'
                         x:Name="TextBox_Code"
                         Width="250"
                         Height="74"
@@ -47,7 +46,7 @@
                         RelativePanel.Below="Email"
                         Margin="28,100,28.4,156" 
                         RenderTransformOrigin="1.541,0.754"
-                        Text="{Binding Email, Mode=TwoWay}"
+
                     />
                 <!-- login student -->
                 <Button x:ConnectionId='4'
@@ -58,8 +57,10 @@
                         Background="DarkBlue"
                         Content="Log ind som Studerende"
                         Foreground="White"
-                        RelativePanel.Below="Code" 
-                />
+                        RelativePanel.Below="Code"                           
+                >
+                   
+                </Button>
                 <!-- login teacher -->
                 <Button x:ConnectionId='5'
                         x:Name="LoginTeacher"
@@ -68,17 +69,20 @@
                         Margin="38,225,0,65"
                         Background="DarkRed"
                         Content="Log ind som Lærer"
-                        Foreground="White"
-                />
+                        Foreground="White"                           
+                >
+                   
+                </Button>
                 <!-- login admin -->
-                <Button
+                <Button x:ConnectionId='6'
                         Width="230"
                         Height="34"
                         Margin="40,279,0,11"
                         Background="White"
                         Content="Log ind som Admin"
-                        Foreground="gray"
-                />
+                        Foreground="gray"                     
+                >
+                </Button>
             </Grid>
         </Grid>
     </Grid>
